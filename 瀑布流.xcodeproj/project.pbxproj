@@ -10,7 +10,6 @@
 		463DB4F11AE24A6A001B365C /* RACollectionViewReorderableTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 463DB4EE1AE24A6A001B365C /* RACollectionViewReorderableTripletLayout.m */; };
 		463DB4F21AE24A6A001B365C /* RACollectionViewTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 463DB4F01AE24A6A001B365C /* RACollectionViewTripletLayout.m */; };
 		463DB4F41AE24E9A001B365C /* Layout.gif in Resources */ = {isa = PBXBuildFile; fileRef = 463DB4F31AE24E9A001B365C /* Layout.gif */; };
-		4649AEE01ADA6924002BEAF4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4649AEDF1ADA6924002BEAF4 /* README.md */; };
 		46979F5A1ADA52D50032BB0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F591ADA52D50032BB0E /* main.m */; };
 		46979F5D1ADA52D50032BB0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F5C1ADA52D50032BB0E /* AppDelegate.m */; };
 		46979F601ADA52D50032BB0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F5F1ADA52D50032BB0E /* ViewController.m */; };
@@ -425,7 +424,6 @@
 				46979FC71ADA59E90032BB0E /* SDImageCache.m in Sources */,
 				46979F961ADA566C0032BB0E /* NSObject+MJCoding.m in Sources */,
 				46979F931ADA566C0032BB0E /* MJFoundation.m in Sources */,
-				4649AEE01ADA6924002BEAF4 /* README.md in Sources */,
 				46979F5A1ADA52D50032BB0E /* main.m in Sources */,
 				463DB4F21AE24A6A001B365C /* RACollectionViewTripletLayout.m in Sources */,
 				46979FC81ADA59E90032BB0E /* SDWebImageCompat.m in Sources */,
