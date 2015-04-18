@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463DB4F11AE24A6A001B365C /* RACollectionViewReorderableTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 463DB4EE1AE24A6A001B365C /* RACollectionViewReorderableTripletLayout.m */; };
+		463DB4F21AE24A6A001B365C /* RACollectionViewTripletLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 463DB4F01AE24A6A001B365C /* RACollectionViewTripletLayout.m */; };
+		463DB4F41AE24E9A001B365C /* Layout.gif in Resources */ = {isa = PBXBuildFile; fileRef = 463DB4F31AE24E9A001B365C /* Layout.gif */; };
 		4649AEE01ADA6924002BEAF4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4649AEDF1ADA6924002BEAF4 /* README.md */; };
-		4649AEE31ADA69CD002BEAF4 /* QQ20150412-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4649AEE21ADA69CD002BEAF4 /* QQ20150412-1@2x.png */; };
 		46979F5A1ADA52D50032BB0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F591ADA52D50032BB0E /* main.m */; };
 		46979F5D1ADA52D50032BB0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F5C1ADA52D50032BB0E /* AppDelegate.m */; };
 		46979F601ADA52D50032BB0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F5F1ADA52D50032BB0E /* ViewController.m */; };
@@ -17,7 +19,6 @@
 		46979F681ADA52D50032BB0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46979F661ADA52D50032BB0E /* LaunchScreen.xib */; };
 		46979F741ADA52D50032BB0E /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F731ADA52D50032BB0E /* ___Tests.m */; };
 		46979F7E1ADA536B0032BB0E /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46979F7D1ADA536B0032BB0E /* 1.plist */; };
-		46979F811ADA53FF0032BB0E /* MyWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F801ADA53FF0032BB0E /* MyWaterflowLayout.m */; };
 		46979F921ADA566C0032BB0E /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F841ADA566C0032BB0E /* MJConst.m */; };
 		46979F931ADA566C0032BB0E /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F871ADA566C0032BB0E /* MJFoundation.m */; };
 		46979F941ADA566C0032BB0E /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46979F891ADA566C0032BB0E /* MJIvar.m */; };
@@ -57,8 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		463DB4ED1AE24A6A001B365C /* RACollectionViewReorderableTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewReorderableTripletLayout.h; sourceTree = "<group>"; };
+		463DB4EE1AE24A6A001B365C /* RACollectionViewReorderableTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewReorderableTripletLayout.m; sourceTree = "<group>"; };
+		463DB4EF1AE24A6A001B365C /* RACollectionViewTripletLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACollectionViewTripletLayout.h; sourceTree = "<group>"; };
+		463DB4F01AE24A6A001B365C /* RACollectionViewTripletLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACollectionViewTripletLayout.m; sourceTree = "<group>"; };
+		463DB4F31AE24E9A001B365C /* Layout.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Layout.gif; sourceTree = "<group>"; };
 		4649AEDF1ADA6924002BEAF4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4649AEE21ADA69CD002BEAF4 /* QQ20150412-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QQ20150412-1@2x.png"; sourceTree = "<group>"; };
 		46979F541ADA52D50032BB0E /* 瀑布流.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "瀑布流.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46979F581ADA52D50032BB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46979F591ADA52D50032BB0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,8 +78,6 @@
 		46979F721ADA52D50032BB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46979F731ADA52D50032BB0E /* ___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___Tests.m"; sourceTree = "<group>"; };
 		46979F7D1ADA536B0032BB0E /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
-		46979F7F1ADA53FF0032BB0E /* MyWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWaterflowLayout.h; sourceTree = "<group>"; };
-		46979F801ADA53FF0032BB0E /* MyWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWaterflowLayout.m; sourceTree = "<group>"; };
 		46979F831ADA566C0032BB0E /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
 		46979F841ADA566C0032BB0E /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
 		46979F851ADA566C0032BB0E /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -148,12 +151,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4649AEE11ADA69CD002BEAF4 /* ScreenCapture */ = {
+		463DB4EC1AE24A63001B365C /* layout */ = {
 			isa = PBXGroup;
 			children = (
-				4649AEE21ADA69CD002BEAF4 /* QQ20150412-1@2x.png */,
+				463DB4ED1AE24A6A001B365C /* RACollectionViewReorderableTripletLayout.h */,
+				463DB4EE1AE24A6A001B365C /* RACollectionViewReorderableTripletLayout.m */,
+				463DB4EF1AE24A6A001B365C /* RACollectionViewTripletLayout.h */,
+				463DB4F01AE24A6A001B365C /* RACollectionViewTripletLayout.m */,
 			);
-			path = ScreenCapture;
+			name = layout;
 			sourceTree = "<group>";
 		};
 		46979F4B1ADA52D50032BB0E = {
@@ -163,7 +169,7 @@
 				46979F561ADA52D50032BB0E /* 瀑布流 */,
 				46979F701ADA52D50032BB0E /* 瀑布流Tests */,
 				46979F551ADA52D50032BB0E /* Products */,
-				4649AEE11ADA69CD002BEAF4 /* ScreenCapture */,
+				463DB4F31AE24E9A001B365C /* Layout.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +185,7 @@
 		46979F561ADA52D50032BB0E /* 瀑布流 */ = {
 			isa = PBXGroup;
 			children = (
+				463DB4EC1AE24A63001B365C /* layout */,
 				46979FA31ADA59E90032BB0E /* SDWebImage */,
 				46979FA21ADA58B90032BB0E /* view */,
 				46979FA11ADA58B10032BB0E /* model */,
@@ -191,8 +198,6 @@
 				46979F641ADA52D50032BB0E /* Images.xcassets */,
 				46979F661ADA52D50032BB0E /* LaunchScreen.xib */,
 				46979F571ADA52D50032BB0E /* Supporting Files */,
-				46979F7F1ADA53FF0032BB0E /* MyWaterflowLayout.h */,
-				46979F801ADA53FF0032BB0E /* MyWaterflowLayout.m */,
 			);
 			path = "瀑布流";
 			sourceTree = "<group>";
@@ -387,8 +392,8 @@
 			files = (
 				46979F631ADA52D50032BB0E /* Main.storyboard in Resources */,
 				46979F681ADA52D50032BB0E /* LaunchScreen.xib in Resources */,
+				463DB4F41AE24E9A001B365C /* Layout.gif in Resources */,
 				46979F7E1ADA536B0032BB0E /* 1.plist in Resources */,
-				4649AEE31ADA69CD002BEAF4 /* QQ20150412-1@2x.png in Resources */,
 				46979F9D1ADA572B0032BB0E /* ShopCell.xib in Resources */,
 				46979F651ADA52D50032BB0E /* Images.xcassets in Resources */,
 			);
@@ -411,7 +416,7 @@
 				46979F601ADA52D50032BB0E /* ViewController.m in Sources */,
 				46979FD11ADA59E90032BB0E /* UIImage+WebP.m in Sources */,
 				46979FA01ADA58960032BB0E /* Shop.m in Sources */,
-				46979F811ADA53FF0032BB0E /* MyWaterflowLayout.m in Sources */,
+				463DB4F11AE24A6A001B365C /* RACollectionViewReorderableTripletLayout.m in Sources */,
 				46979F941ADA566C0032BB0E /* MJIvar.m in Sources */,
 				46979F5D1ADA52D50032BB0E /* AppDelegate.m in Sources */,
 				46979F981ADA566C0032BB0E /* NSObject+MJKeyValue.m in Sources */,
@@ -422,6 +427,7 @@
 				46979F931ADA566C0032BB0E /* MJFoundation.m in Sources */,
 				4649AEE01ADA6924002BEAF4 /* README.md in Sources */,
 				46979F5A1ADA52D50032BB0E /* main.m in Sources */,
+				463DB4F21AE24A6A001B365C /* RACollectionViewTripletLayout.m in Sources */,
 				46979FC81ADA59E90032BB0E /* SDWebImageCompat.m in Sources */,
 				46979FC61ADA59E90032BB0E /* NSData+ImageContentType.m in Sources */,
 				46979F971ADA566C0032BB0E /* NSObject+MJIvar.m in Sources */,

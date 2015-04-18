@@ -3,16 +3,17 @@
 //  瀑布流
 //
 //  Created by Singer on 15/4/12.
-//  Copyright (c) 2015年 Singer. All rights reserved.
-//
+//  Copyright (c) 2015年 Singer. All rights
 
 #import "ViewController.h"
 #import "MJExtension.h"
 #import "Shop.h"
 #import "ShopCell.h"
 #import "UIImageView+WebCache.h"
-#import "MyWaterflowLayout.h"
-@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,MyWaterflowLayoutDelegate>
+#import "RACollectionViewTripletLayout.h"
+
+
+@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,RACollectionViewDelegateTripletLayout>
 @property (weak, nonatomic)IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *shops;
 @end
@@ -27,24 +28,21 @@ static NSString *const shopCellID = @"shopCell";
     self.shops = [NSMutableArray array];
     NSArray *array = [Shop objectArrayWithFilename:@"1.plist"];
     [self.shops addObjectsFromArray:array];
-    
-    MyWaterflowLayout *myWaterflowLayout = [[MyWaterflowLayout alloc]init];
-    myWaterflowLayout.delegate = self;
 
     _collectionView.backgroundColor = [UIColor whiteColor];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
-    _collectionView.collectionViewLayout = myWaterflowLayout;
+
+    RACollectionViewTripletLayout *flowLayout = [[RACollectionViewTripletLayout alloc]init];
+    flowLayout.delegate = self;
+    _collectionView.collectionViewLayout = flowLayout;
+
     [self.collectionView registerNib:[UINib nibWithNibName:@"ShopCell" bundle:nil] forCellWithReuseIdentifier:shopCellID];
    
     [self.view addSubview:_collectionView];
     
 }
 
--(CGFloat)waterflowLayout:(MyWaterflowLayout *)waterflowLayout heightForWidth:(CGFloat)width atIndexPath:(NSIndexPath *)indexPath{
-    Shop *shop = self.shops[indexPath.item];
-    return shop.h / shop.w * width;
-}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return _shops.count;
@@ -54,7 +52,24 @@ static NSString *const shopCellID = @"shopCell";
     ShopCell *shopCell = [collectionView dequeueReusableCellWithReuseIdentifier:shopCellID forIndexPath:indexPath];
     Shop *shop = _shops[indexPath.item];
     [shopCell.imageView sd_setImageWithURL:[NSURL URLWithString:shop.img]];
-    shopCell.priceLabel.text = shop.price;
+    shopCell.priceLabel.text = [NSString stringWithFormat:@"%ld",indexPath.item+1];
+    shopCell.backgroundColor = [UIColor grayColor];
     return shopCell;
 }
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"click %ld",indexPath.item);
+}
+
+- (UIEdgeInsets)insetsForCollectionView:(UICollectionView *)collectionView{
+    return UIEdgeInsetsMake(10, 10, 10, 10);
+}
+
+- (CGFloat)minimumInteritemSpacingForCollectionView:(UICollectionView *)collectionView{
+    return 10.0f;
+}
+- (CGFloat)minimumLineSpacingForCollectionView:(UICollectionView *)collectionView{
+    return 10.0f;
+}
+
 @end
