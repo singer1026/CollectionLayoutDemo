@@ -51,7 +51,10 @@ static NSString *const shopCellID = @"shopCell";
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     ShopCell *shopCell = [collectionView dequeueReusableCellWithReuseIdentifier:shopCellID forIndexPath:indexPath];
     Shop *shop = _shops[indexPath.item];
-    [shopCell.imageView sd_setImageWithURL:[NSURL URLWithString:shop.img]];
+//    [shopCell.imageView sd_setImageWithURL:[NSURL URLWithString:shop.img]];
+    
+    SDWebImageOptions option  = SDWebImageRetryFailed | SDWebImageLowPriority;
+    [shopCell.imageView sd_setImageWithURL:[NSURL URLWithString:shop.img] placeholderImage:nil options:option];
     shopCell.priceLabel.text = [NSString stringWithFormat:@"%ld",indexPath.item+1];
     shopCell.backgroundColor = [UIColor grayColor];
     return shopCell;
